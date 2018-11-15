@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <img src="../public/img/icons/android-chrome-192x192.png" height="120px" alt="">
+    <h1>graphQl + Vue</h1>
     <router-view/>
   </div>
 </template>

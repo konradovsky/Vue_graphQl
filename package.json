@@ -1,10 +1,11 @@
 {
-  "name": "vuestarter",
-  "version": "1.0.1",
-  "private": false,
+  "name": "vuegraph",
+  "version": "0.1.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
@@ -15,15 +16,38 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-plugin-e2e-cypress": "^3.0.5",
+    "@vue/cli-plugin-eslint": "^3.0.5",
     "@vue/cli-plugin-pwa": "^3.0.5",
     "@vue/cli-plugin-unit-jest": "^3.0.5",
     "@vue/cli-service": "^3.0.5",
     "@vue/test-utils": "^1.0.0-beta.20",
     "babel-core": "7.0.0-bridge.0",
-    "babel-jest": "^23.0.1",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
-    "url-loader": "^1.1.2",
     "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
   }
 }

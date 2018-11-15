@@ -1,22 +1,18 @@
 language: node_js
 node_js:
-  - "8.6.0"
-  - "node"
-env:
-  - WEBPACK_VERSION=4
-install:
-  - if [[ `npm -v` != 5.7* ]]; then npm install -g npm@'>=5.7.1'; fi
-  - npm ci
+  - 8
+cache:
+  directories:
+    - node_modules
+
 before_script:
-  - if [[ -n "$WEBPACK_VERSION" ]]; then npm install --no-save webpack@$WEBPACK_VERSION; fi
-stages:
-  - test:unit
-  - build
-jobs:
-  include:
-    - stage: test:unit
-      script:
-        - npm run test:unit
-    - stage: build
-      script:
-        - npm run build
+  - npm build
+  - npm start --silent &
+  
+script:
+  # run linter
+  - npm run lint
+  # run unit tests:
+  - npm run test:unit
+  # run E2E tests:
+  - $(npm bin)/cypress run
