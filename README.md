@@ -1,7 +1,7 @@
 <p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/konradovsky/Vue_Starter/master/public/img/icons/android-chrome-192x192.png" alt="Vue Starter logo"></a></p>
 
 <p align="center">
-  <a href="https://travis-ci.org/konradovsky/Vue_Style_Starter"><img src="https://travis-ci.org/konradovsky/Vue_Style_Starter.svg?branch=master" alt="Build Status"></a>
+  <a href="https://travis-ci.org/konradovsky/Vue_graphQl"><img src="https://travis-ci.org/konradovsky/Vue_graphQl.svg?branch=Travistest" alt="Build Status"></a>
   <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/l/vue.svg" alt="License"></a>
   <br>
 </p>
