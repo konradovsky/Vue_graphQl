@@ -8,6 +8,8 @@ cache:
 before_script:
   - npm build
   - npm start --silent &
+
+  - cypress verify
   
 script:
   # run linter
