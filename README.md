@@ -1,9 +1,5 @@
 <p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://raw.githubusercontent.com/konradovsky/Vue_GraphQL/master/public/img/icons/android-chrome-192x192.png" alt="Vue Starter logo"></a></p>
 
-<p align="center">
-  <a href="https://travis-ci.org/konradovsky/Vue_graphQl"><img src="https://travis-ci.org/konradovsky/Vue_GraphQL.svg?branch=master" alt="Build Status"></a>
-</p>
-
 <h2 align="center">Vue GraphQl Starter</h2>
 
 Project is pre-alpha
